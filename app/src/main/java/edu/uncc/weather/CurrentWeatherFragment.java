@@ -76,7 +76,7 @@ public class CurrentWeatherFragment extends Fragment {
 
         HttpUrl url = HttpUrl.parse("https://api.openweathermap.org/data/2.5/weather").newBuilder()
                 .addQueryParameter("q", String.valueOf(mCity))
-                .addQueryParameter("appid", "ecb72d1daf73d7dfcc8eb0860b6610c7")
+                .addQueryParameter("appid", "") //can insert API key here
                 .addQueryParameter("units", "imperial")
                 .addQueryParameter("lang", "en")
                 .build();
